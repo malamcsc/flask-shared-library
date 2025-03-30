@@ -1,4 +1,4 @@
-@Library('my-shared-library') _ 
+@Library('my_shared_library') _ 
 
 testCICD {
     BRANCH = "main"
