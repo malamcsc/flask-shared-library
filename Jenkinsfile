@@ -1,6 +1,6 @@
 @Library('my-shared-library') _ 
 
-python-ci-cd {
+testCICD {
     BRANCH = "main"
     GITHUB_REPO = "https://github.com/malamcsc/flask-shared-library.git"
     IMAGE_REPO = "malamcsc/kubernetes_project"
