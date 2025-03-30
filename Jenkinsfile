@@ -1,4 +1,5 @@
-@Library('python-shared-library') _ 
+@Library('my-shared-library') _ 
+
 python-ci-cd {
     BRANCH = "main"
     GITHUB_REPO = "https://github.com/malamcsc/flask-shared-library.git"
