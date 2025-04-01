@@ -19,5 +19,5 @@ jobs:
         JENKINS_USER: alam
         JENKINS_TOKEN: ${{ env.JENKINS_TOKEN }}
       run: |
-        curl -X POST "http://localhost:8080/job/flask" \
+        curl -X POST "http://172.31.184.50:8080/job/flask" \
         --user "alam:11144cf3d2841fcc869d342bbb9bc433e9"
