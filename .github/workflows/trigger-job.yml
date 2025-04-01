@@ -15,9 +15,9 @@ jobs:
 
     - name: Trigger Jenkins Pipeline Job
       env:
-        JENKINS_URL: ${{ env.JENKINS_URL }}
-        JENKINS_USER: ${{ env.JENKINS_USER }}
+        JENKINS_URL: http://localhost:8080
+        JENKINS_USER: alam
         JENKINS_TOKEN: ${{ env.JENKINS_TOKEN }}
       run: |
-        curl -X POST "${{ env.JENKINS_URL }}/job/flask" \
+        curl -X POST "http://localhost:8080}/job/flask" \
         --user "${{ env.JENKINS_USER }}:${{ env.JENKINS_TOKEN }}"
