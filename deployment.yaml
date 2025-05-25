@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shared-library-app
+  labels:
+    app: shared-library-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shared-library-app
+  template:
+    metadata:
+      labels:
+        app: shared-library-app
+    spec:
+      containers:
+      - name: shared-library-app
+        image: malamcsc/shared-library-app:v5
+        ports:
+        - containerPort: 5001
