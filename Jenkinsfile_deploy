@@ -1,0 +1,9 @@
+@Library('my_shared_library') _ 
+
+deployment {
+    BRANCH = "main"
+    GITHUB_REPO = "https://github.com/malamcsc/flask-shared-library.git"
+    IMAGE_REPO = "malamcsc/shared-library-app"
+    GIT_CREDENTIAL = "jenkins-github-token"
+}
+
